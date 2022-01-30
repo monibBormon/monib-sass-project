@@ -1,0 +1,17 @@
+.about-area{
+    .about-text{
+        h3{
+            font-size: 35px;
+            font-weight: 700;
+            color: $heading-color;
+        }
+        ul{
+            li{
+                i{
+                    color: $primary-color;
+                    margin-right: 5px;
+                }
+            }
+        }
+    }
+}
