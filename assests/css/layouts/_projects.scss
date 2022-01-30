@@ -1,0 +1,53 @@
+.project-area{
+    .col-xl-4{
+        padding: 0;
+    }
+    .single-project{
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+        height: 280px;
+
+        &:hover{
+            .project-content{
+                opacity: 1;
+                visibility: visible;
+                transform: scale(1);
+            }
+        }
+        .project-content{
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            position: relative;
+            z-index: 5;
+            opacity: 0;
+            visibility: hidden;
+            transform: scale(0);
+            transition: all .4s;
+            &::before{
+                position: absolute;
+                content: "";
+                left: 0;
+                top: 0;
+                width: 100%;
+                height: 100%;
+                background-color: black;
+                opacity: .8;
+                z-index: -1;
+            }
+            a{
+                font-size: 24px;
+                color: $white;
+             }
+             h4{
+                 font-size: 20px;
+                 text-transform: capitalize;
+                 margin-top: 5px;
+             }
+        }
+    }
+}
